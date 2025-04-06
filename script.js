@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'X-Shopify-Storefront-Access-Token': '7e174585a317d187255660745da44cc7',
+      'X-Shopify-Storefront-Access-Token': CONFIG.SHOPIFY_TOKEN,
     },
     body: JSON.stringify({ query }),
   })
@@ -106,11 +106,11 @@ document.addEventListener('DOMContentLoaded', () => {
         productsContainer.appendChild(productCard);
       });
 
-      loader.style.display = 'none'; 
+      loader.style.display = 'none';
     })
     .catch(error => {
       console.error('Помилка при завантаженні продуктів:', error);
       productsContainer.innerHTML = `<p>Помилка завантаження продуктів</p>`;
-      loader.style.display = 'none'; 
+      loader.style.display = 'none';
     });
 });
