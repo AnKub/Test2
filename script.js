@@ -113,4 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
       productsContainer.innerHTML = `<p>Помилка завантаження продуктів</p>`;
       loader.style.display = 'none';
     });
+  const faqButtons = document.querySelectorAll('.faq-question');
+  
+  faqButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('active');
+    });
+  });
 });
