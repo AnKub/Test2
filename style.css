@@ -11,7 +11,7 @@ body {
 }
 
 .featured-products-section h2 {
-  text-align:left;
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -22,7 +22,6 @@ body {
 
 .faq-item {
   display: flex;
-  flex-direction: row-reverse; /* Питання з правої сторони */
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 15px;
@@ -136,9 +135,8 @@ body {
     width: calc(50% - 20px);
   }
 
-  /* Адаптація FAQ для середніх екранів */
   .faq-item {
-    flex-direction: row-reverse;
+    flex-direction: row; /* Питання зліва, відповідь справа */
   }
 
   .faq-question {
@@ -155,9 +153,8 @@ body {
     width: calc(33.333% - 20px);
   }
 
-  /* Адаптація FAQ для більших екранів */
   .faq-item {
-    flex-direction: row-reverse;
+    flex-direction: row; /* Питання зліва, відповідь справа */
   }
 
   .faq-question {
